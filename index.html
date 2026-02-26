@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stage 2 - The Missing at Castle Byers</title>
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Export table to image -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>Stage 2 - The Missing at Castle Byers</h1>
+    <h2>Case Files Summary</h2>
+
+    <div class="card" id="card">
+      <div class="warning">
+        <div class="icon">!</div>
+        <div>
+          <strong>Note:</strong> Your progress is auto-saved in this browser.
+          If you finish with 100% correct answers, click <strong>Export as Image (PNG)</strong> to keep a copy.
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="status" id="statusBox">
+          <span class="dot"></span>
+          <span id="statusText">Fill in every cell. The system will validate automatically.</span>
+        </div>
+
+        <div class="btns">
+          <button id="exportBtn" disabled>Export as Image (PNG)</button>
+          <button id="resetBtn" title="Clear everything">Reset</button>
+        </div>
+      </div>
+
+      <div class="table-wrap" id="tableArea">
+        <table id="caseTable" aria-label="Case Files Summary Table">
+          <thead>
+            <tr>
+              <th class="th-name">Name</th>
+              <th>A</th>
+              <th>B</th>
+              <th>C</th>
+              <th>D</th>
+              <th class="th-missing">Missing or Not Missing</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <!-- rows injected by JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note">
+        • Columns A–D: choose <code>True</code> (green) or <code>False</code> (red).<br/>
+        • Final column: choose <code>Missing</code> or <code>Not Missing</code>.<br/>
+        • Export is enabled only when every entry is correct.
+      </div>
+    </div>
+  </div>
+
+  <!-- Restore Progress Modal -->
+  <div class="modal-backdrop" id="restoreBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="restoreTitle">
+      <h3 id="restoreTitle">Restore progress detected</h3>
+      <p>
+        We found saved progress from a previous session in this browser.
+        Would you like to restore it?
+      </p>
+
+      <div class="modal-actions">
+        <button class="btn-secondary" id="discardRestoreBtn">Discard</button>
+        <button class="btn-primary" id="confirmRestoreBtn">Restore</button>
+      </div>
+
+      <div class="modal-hint">
+        Tip: Discard will delete the saved progress for this page.
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
