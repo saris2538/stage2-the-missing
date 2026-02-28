@@ -1,16 +1,16 @@
 const STORAGE_KEY = "stage2_casefiles_progress_v3";
 
-const NAMES = ["Mr.B","Mr.F","Mr.G","Mr.A","Mr.H","Mr.C","Mr.D","Mr.E"];
+const NAMES = ["Old Man","Ellie","Merry","Skip","Artie","The Keg","Dorothy Gable","Johnny"];
 
 const ANSWER = {
-  "Mr.B": { A:"FALSE", B:"FALSE", C:"FALSE", D:"TRUE",  M:"Missing" },
-  "Mr.F": { A:"TRUE",  B:"FALSE", C:"FALSE", D:"FALSE", M:"Not Missing" },
-  "Mr.G": { A:"FALSE", B:"FALSE", C:"TRUE",  D:"FALSE", M:"Not Missing" },
-  "Mr.A": { A:"TRUE",  B:"FALSE", C:"TRUE",  D:"FALSE", M:"Missing" },
-  "Mr.H": { A:"TRUE",  B:"TRUE",  C:"TRUE",  D:"FALSE", M:"Missing" },
-  "Mr.C": { A:"TRUE",  B:"TRUE",  C:"FALSE", D:"FALSE", M:"Not Missing" },
-  "Mr.D": { A:"FALSE", B:"TRUE",  C:"TRUE",  D:"FALSE", M:"Not Missing" },
-  "Mr.E": { A:"FALSE", B:"TRUE",  C:"FALSE", D:"FALSE", M:"Not Missing" },
+  "Old Man": { A:"FALSE", B:"FALSE", C:"FALSE", D:"TRUE",  M:"Missing" },
+  "Ellie": { A:"TRUE",  B:"FALSE", C:"FALSE", D:"FALSE", M:"Not Missing" },
+  "Merry": { A:"FALSE", B:"FALSE", C:"TRUE",  D:"FALSE", M:"Not Missing" },
+  "Skip": { A:"TRUE",  B:"FALSE", C:"TRUE",  D:"FALSE", M:"Missing" },
+  "Artie": { A:"TRUE",  B:"TRUE",  C:"TRUE",  D:"FALSE", M:"Missing" },
+  "The Keg": { A:"TRUE",  B:"TRUE",  C:"FALSE", D:"FALSE", M:"Not Missing" },
+  "Dorothy Gable": { A:"FALSE", B:"TRUE",  C:"TRUE",  D:"FALSE", M:"Not Missing" },
+  "Johnny": { A:"FALSE", B:"TRUE",  C:"FALSE", D:"FALSE", M:"Not Missing" },
 };
 
 // DOM
